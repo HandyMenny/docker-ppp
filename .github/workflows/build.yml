@@ -24,7 +24,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     strategy:
       matrix:
-        image: [latex, dmrconfig]
+        image: [latex, dmrconfig, ppp]
 
     steps:
       - uses: actions/checkout@v2
