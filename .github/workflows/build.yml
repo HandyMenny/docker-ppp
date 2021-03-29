@@ -38,8 +38,8 @@ jobs:
         uses: peter-evans/dockerhub-description@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: tzermias/${{ matrix.image }}:latest
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: tzermias/${{ matrix.image }}
           readme-filepath: ./${{ matrix.image }}/README.md
 
 # vi: ts=2 sts=2 et sw=2
